@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_navigation"
+    app:startDestination="@id/homeScreen">
+    <fragment
+        android:id="@+id/addNoteScreen"
+        android:name="uz.gita.noteapppractika.presentation.screen.addnote.AddNoteScreen"
+        tools:layout="@layout/screen_add_note" >
+        <argument
+            android:name="note"
+            app:argType="uz.gita.noteapppractika.data.model.NoteData"
+            app:nullable="true"/>
+        <argument
+            android:name="action"
+            app:argType="boolean"/>
+    </fragment>
+    <fragment
+        android:id="@+id/trashScreen"
+        android:name="uz.gita.noteapppractika.presentation.screen.trash.TrashScreen"
+        android:label="Trash"
+        tools:layout="@layout/screen_trash" />
+    <fragment
+        android:id="@+id/homeScreen"
+        android:name="uz.gita.noteapppractika.presentation.screen.home.HomeScreen"
+        android:label="Notes"
+        tools:layout="@layout/screen_home" >
+        <action
+            android:id="@+id/action_homeScreen_to_addNoteScreen"
+            app:destination="@id/addNoteScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteScreen"
+        android:name="uz.gita.noteapppractika.presentation.screen.favorite.FavoriteScreen"
+        android:label="Archive"
+        tools:layout="@layout/screen_favorite"/>
+    <fragment
+        android:id="@+id/infoScreen"
+        android:name="uz.gita.noteapppractika.presentation.screen.info.InfoScreen"
+        android:label="About"
+        tools:layout="@layout/screen_info" />
+</navigation>
