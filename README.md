@@ -15,3 +15,5 @@
 ![image](https://github.com/SAMANDAR4407/Note_app/assets/69010982/7f4a7df2-b549-4a9d-85a7-c2af2c3bf2fa)
 
 ![image](https://github.com/SAMANDAR4407/Note_app/assets/69010982/9e412276-9bb9-4bb3-9ee7-9a5c7b95f007)
+
+![image](https://github.com/SAMANDAR4407/Note_app/assets/69010982/c56d75cb-8588-46e4-b6dc-10ad7f4b843b)
